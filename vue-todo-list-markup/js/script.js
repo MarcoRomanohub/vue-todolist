@@ -4,7 +4,7 @@ DEFAULT
 
 MILESTONE 1
 2. Con un ciclo v-for (elemento, indice?) stampiamo i vari todo.text
-3. Condizione se done === true aggiungiamo una classe overline al todo.text (col ternario? v-if?)
+3. Condizione se done === true aggiungiamo la classe done al li (col ternario? v-if?)
 
 MILESTONE 2
 4. @click alla x richiamo funzione che fa uno splice del todo dall'array (mi sserve indice punto2?)
@@ -41,8 +41,25 @@ createApp({
           text:'Pulire casa',
           done: false
         },
-      ]
+      ],
+      // isDone: '',
     }
 
-  }
+  },
+
+  methods:{
+
+    // isDoneCheck(){
+    //   if(this.todoList.done == true ){
+    //     this.isDone = 'true';
+    //   }else{
+    //     this.isDone = 'false';
+    //   }
+    // }
+
+  },
+
+  mounted(){
+    // this.isDoneCheck();
+  },
 }).mount('#app')
