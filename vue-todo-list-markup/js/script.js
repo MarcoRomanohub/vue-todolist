@@ -42,24 +42,17 @@ createApp({
           done: false
         },
       ],
-      // isDone: '',
+      
     }
 
   },
 
   methods:{
 
-    // isDoneCheck(){
-    //   if(this.todoList.done == true ){
-    //     this.isDone = 'true';
-    //   }else{
-    //     this.isDone = 'false';
-    //   }
-    // }
-
+    
   },
 
   mounted(){
-    // this.isDoneCheck();
+    
   },
 }).mount('#app')

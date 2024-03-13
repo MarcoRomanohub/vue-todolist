@@ -38,7 +38,7 @@
     <div class="task-container">
       <ul>
 
-        <li v-for="(task, indice) in todoList" ><!-- :class="{'done': isDone}" -->
+        <li v-for="(task, indice) in todoList" :class="{'done' : task.done}">
           <span>{{task.text}}</span>
           <i class="fa-solid fa-trash-can"></i>
         </li>
