@@ -48,7 +48,10 @@ createApp({
   },
 
   methods:{
-
+    
+    removeTask(indice){
+      this.todoList.splice(indice)
+    }
     
   },
 
