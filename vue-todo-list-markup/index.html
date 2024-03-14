@@ -30,7 +30,7 @@
 
     <div class="new-task">
 
-      <input v-model="newTask.text"  placeholder="Nuovo task"type="text" @keyup.enter="addTask">
+      <input v-model.trim="newTaskText"  placeholder="Nuovo task"type="text" @keyup.enter="addTask">
       <button @click="addTask" >Aggiungi</button>
       <p class="error"></p>
     </div>

@@ -42,10 +42,9 @@ createApp({
           done: false
         },
       ],
-      newTask:{
-        text:'',
-        done: false
-      }
+
+      newTaskText: '',
+
     }
 
   },
@@ -57,7 +56,12 @@ createApp({
     },
 
     addTask(){
-      this.todoList.unshift(this.newTask)
+      const newTask = {
+        text:this.newTaskText,
+        done: false
+      }
+      this.todoList.unshift(newTask)
+
     }
     
   },
