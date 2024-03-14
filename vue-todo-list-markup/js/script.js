@@ -44,6 +44,8 @@ createApp({
       ],
 
       newTaskText: '',
+      
+      errorMsg: ''
 
     }
 
@@ -62,6 +64,10 @@ createApp({
       }
       this.todoList.unshift(newTask)
 
+    },
+
+    toggleDone(task){
+      task.done = !task.done
     }
     
   },
